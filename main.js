@@ -37,8 +37,31 @@ const cube = function (number) {
   return number * number * number;
 };
 
-// guess the following before trying it in the console
+//q 5 guess the following before trying it in the console
 cube(25) + 20; // => 15645
 square(5) + cube(2); // => 33
 square(10 / 5) + cube(2 + 1); // => 31
 average(square(average(6, 2)), cube(4)); // => 40
+//q6 Write a function ageInHours that accepts a number argument ageInYears and returns the age in hours (ignore leap years).
+
+const ageInHours = function (ageInYears) {
+    const hoursInday =24;
+    const daysInYear=365;
+    return ageInYears* daysInYear*  hoursInday
+  };
+  
+ console.log (ageInHours(10)); // => 87600
+ console.log (ageInHours(19)); // => 166440
+
+ //q7 Write a function calculateProfit that accepts three arguments unitsSold, unitCost, unitPrice, and returns the net profit.
+
+const calculateProfit = function (unitsSold, unitCost, unitPrice) {
+  const netprofit=unitsSold*(unitprice-unitCost);
+  return netprofit;
+};
+
+calculateProfit(1, 3, 5); // => 2
+calculateProfit(4, 2, 5); // => 12
+calculateProfit(10, 5, 15); // => 100
+
+  
